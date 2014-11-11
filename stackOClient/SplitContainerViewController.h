@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SplitContainerViewController.h
 //  stackOClient
 //
 //  Created by Matthew Brightbill on 11/10/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface SplitContainerViewController : UIViewController <UISplitViewControllerDelegate>
 
 @end
-

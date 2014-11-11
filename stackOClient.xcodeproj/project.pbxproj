@@ -10,11 +10,16 @@
 		D558362D1A11686A0031AACD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D558362C1A11686A0031AACD /* main.m */; };
 		D55836301A11686A0031AACD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D558362F1A11686A0031AACD /* AppDelegate.m */; };
 		D55836331A11686A0031AACD /* stackOClient.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D55836311A11686A0031AACD /* stackOClient.xcdatamodeld */; };
-		D55836361A11686A0031AACD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D55836351A11686A0031AACD /* ViewController.m */; };
 		D55836391A11686A0031AACD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D55836371A11686A0031AACD /* Main.storyboard */; };
 		D558363B1A11686A0031AACD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D558363A1A11686A0031AACD /* Images.xcassets */; };
 		D558363E1A11686A0031AACD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D558363C1A11686A0031AACD /* LaunchScreen.xib */; };
 		D558364A1A11686A0031AACD /* stackOClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D55836491A11686A0031AACD /* stackOClientTests.m */; };
+		D55836591A11738E0031AACD /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = D55836581A11738E0031AACD /* Question.m */; };
+		D558365B1A1173BD0031AACD /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D558365A1A1173BD0031AACD /* User.m */; };
+		D558365D1A117AFA0031AACD /* NetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = D558365C1A117AFA0031AACD /* NetworkController.m */; };
+		D55836601A117B300031AACD /* QuestionsSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D558365F1A117B300031AACD /* QuestionsSearchViewController.m */; };
+		D55836631A11CEDD0031AACD /* SplitContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D55836621A11CEDD0031AACD /* SplitContainerViewController.m */; };
+		D558369A1A11E45D0031AACD /* QuestionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D55836991A11E45D0031AACD /* QuestionCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +39,21 @@
 		D558362E1A11686A0031AACD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D558362F1A11686A0031AACD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D55836321A11686A0031AACD /* stackOClient.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = stackOClient.xcdatamodel; sourceTree = "<group>"; };
-		D55836341A11686A0031AACD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D55836351A11686A0031AACD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D55836381A11686A0031AACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D558363A1A11686A0031AACD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D558363D1A11686A0031AACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D55836431A11686A0031AACD /* stackOClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stackOClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55836481A11686A0031AACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D55836491A11686A0031AACD /* stackOClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stackOClientTests.m; sourceTree = "<group>"; };
+		D55836581A11738E0031AACD /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		D558365A1A1173BD0031AACD /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		D558365C1A117AFA0031AACD /* NetworkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkController.m; sourceTree = "<group>"; };
+		D558365E1A117B300031AACD /* QuestionsSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionsSearchViewController.h; sourceTree = "<group>"; };
+		D558365F1A117B300031AACD /* QuestionsSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionsSearchViewController.m; sourceTree = "<group>"; };
+		D55836611A11CEDD0031AACD /* SplitContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplitContainerViewController.h; sourceTree = "<group>"; };
+		D55836621A11CEDD0031AACD /* SplitContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplitContainerViewController.m; sourceTree = "<group>"; };
+		D55836981A11E45D0031AACD /* QuestionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionCell.h; sourceTree = "<group>"; };
+		D55836991A11E45D0031AACD /* QuestionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +95,9 @@
 		D55836291A11686A0031AACD /* stackOClient */ = {
 			isa = PBXGroup;
 			children = (
-				D558362E1A11686A0031AACD /* AppDelegate.h */,
-				D558362F1A11686A0031AACD /* AppDelegate.m */,
-				D55836341A11686A0031AACD /* ViewController.h */,
-				D55836351A11686A0031AACD /* ViewController.m */,
-				D55836371A11686A0031AACD /* Main.storyboard */,
+				D55836571A11734D0031AACD /* Controller layer */,
+				D55836561A11733B0031AACD /* View Layer */,
+				D55836551A1173330031AACD /* Model Layer */,
 				D558363A1A11686A0031AACD /* Images.xcassets */,
 				D558363C1A11686A0031AACD /* LaunchScreen.xib */,
 				D55836311A11686A0031AACD /* stackOClient.xcdatamodeld */,
@@ -120,6 +130,39 @@
 				D55836481A11686A0031AACD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D55836551A1173330031AACD /* Model Layer */ = {
+			isa = PBXGroup;
+			children = (
+				D558362E1A11686A0031AACD /* AppDelegate.h */,
+				D558362F1A11686A0031AACD /* AppDelegate.m */,
+				D55836581A11738E0031AACD /* Question.m */,
+				D558365A1A1173BD0031AACD /* User.m */,
+				D55836981A11E45D0031AACD /* QuestionCell.h */,
+				D55836991A11E45D0031AACD /* QuestionCell.m */,
+			);
+			name = "Model Layer";
+			sourceTree = "<group>";
+		};
+		D55836561A11733B0031AACD /* View Layer */ = {
+			isa = PBXGroup;
+			children = (
+				D55836371A11686A0031AACD /* Main.storyboard */,
+			);
+			name = "View Layer";
+			sourceTree = "<group>";
+		};
+		D55836571A11734D0031AACD /* Controller layer */ = {
+			isa = PBXGroup;
+			children = (
+				D558365C1A117AFA0031AACD /* NetworkController.m */,
+				D558365E1A117B300031AACD /* QuestionsSearchViewController.h */,
+				D558365F1A117B300031AACD /* QuestionsSearchViewController.m */,
+				D55836611A11CEDD0031AACD /* SplitContainerViewController.h */,
+				D55836621A11CEDD0031AACD /* SplitContainerViewController.m */,
+			);
+			name = "Controller layer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,8 +267,13 @@
 			files = (
 				D55836331A11686A0031AACD /* stackOClient.xcdatamodeld in Sources */,
 				D55836301A11686A0031AACD /* AppDelegate.m in Sources */,
-				D55836361A11686A0031AACD /* ViewController.m in Sources */,
+				D55836601A117B300031AACD /* QuestionsSearchViewController.m in Sources */,
+				D558365B1A1173BD0031AACD /* User.m in Sources */,
+				D55836591A11738E0031AACD /* Question.m in Sources */,
+				D558365D1A117AFA0031AACD /* NetworkController.m in Sources */,
 				D558362D1A11686A0031AACD /* main.m in Sources */,
+				D55836631A11CEDD0031AACD /* SplitContainerViewController.m in Sources */,
+				D558369A1A11E45D0031AACD /* QuestionCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +466,7 @@
 				D558364F1A11686A0031AACD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D55836501A11686A0031AACD /* Build configuration list for PBXNativeTarget "stackOClientTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +475,7 @@
 				D55836521A11686A0031AACD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
