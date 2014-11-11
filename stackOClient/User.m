@@ -6,4 +6,8 @@
 //  Copyright (c) 2014 Matthew Brightbill. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "User.h"
+
+@implementation User
+
+@end

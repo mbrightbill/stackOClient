@@ -10,6 +10,6 @@
 
 @interface QuestionCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UILabel *questionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *questionTitle;
 
 @end

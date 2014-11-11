@@ -14,12 +14,13 @@
 		D558363B1A11686A0031AACD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D558363A1A11686A0031AACD /* Images.xcassets */; };
 		D558363E1A11686A0031AACD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D558363C1A11686A0031AACD /* LaunchScreen.xib */; };
 		D558364A1A11686A0031AACD /* stackOClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D55836491A11686A0031AACD /* stackOClientTests.m */; };
-		D55836591A11738E0031AACD /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = D55836581A11738E0031AACD /* Question.m */; };
-		D558365B1A1173BD0031AACD /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D558365A1A1173BD0031AACD /* User.m */; };
-		D558365D1A117AFA0031AACD /* NetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = D558365C1A117AFA0031AACD /* NetworkController.m */; };
 		D55836601A117B300031AACD /* QuestionsSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D558365F1A117B300031AACD /* QuestionsSearchViewController.m */; };
 		D55836631A11CEDD0031AACD /* SplitContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D55836621A11CEDD0031AACD /* SplitContainerViewController.m */; };
 		D558369A1A11E45D0031AACD /* QuestionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D55836991A11E45D0031AACD /* QuestionCell.m */; };
+		D558369D1A11EF830031AACD /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = D558369C1A11EF830031AACD /* Question.m */; };
+		D55836A01A11EF8F0031AACD /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D558369F1A11EF8F0031AACD /* User.m */; };
+		D55836A31A11F4C50031AACD /* NetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = D55836A21A11F4C50031AACD /* NetworkController.m */; };
+		D55836A51A11F81A0031AACD /* exampleQuestion.json in Resources */ = {isa = PBXBuildFile; fileRef = D55836A41A11F81A0031AACD /* exampleQuestion.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,15 +46,19 @@
 		D55836431A11686A0031AACD /* stackOClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stackOClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55836481A11686A0031AACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D55836491A11686A0031AACD /* stackOClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stackOClientTests.m; sourceTree = "<group>"; };
-		D55836581A11738E0031AACD /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
-		D558365A1A1173BD0031AACD /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		D558365C1A117AFA0031AACD /* NetworkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkController.m; sourceTree = "<group>"; };
 		D558365E1A117B300031AACD /* QuestionsSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionsSearchViewController.h; sourceTree = "<group>"; };
 		D558365F1A117B300031AACD /* QuestionsSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionsSearchViewController.m; sourceTree = "<group>"; };
 		D55836611A11CEDD0031AACD /* SplitContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplitContainerViewController.h; sourceTree = "<group>"; };
 		D55836621A11CEDD0031AACD /* SplitContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplitContainerViewController.m; sourceTree = "<group>"; };
 		D55836981A11E45D0031AACD /* QuestionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionCell.h; sourceTree = "<group>"; };
 		D55836991A11E45D0031AACD /* QuestionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionCell.m; sourceTree = "<group>"; };
+		D558369B1A11EF830031AACD /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		D558369C1A11EF830031AACD /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		D558369E1A11EF8F0031AACD /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		D558369F1A11EF8F0031AACD /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		D55836A11A11F4C50031AACD /* NetworkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkController.h; sourceTree = "<group>"; };
+		D55836A21A11F4C50031AACD /* NetworkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkController.m; sourceTree = "<group>"; };
+		D55836A41A11F81A0031AACD /* exampleQuestion.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exampleQuestion.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,10 +142,13 @@
 			children = (
 				D558362E1A11686A0031AACD /* AppDelegate.h */,
 				D558362F1A11686A0031AACD /* AppDelegate.m */,
-				D55836581A11738E0031AACD /* Question.m */,
-				D558365A1A1173BD0031AACD /* User.m */,
 				D55836981A11E45D0031AACD /* QuestionCell.h */,
 				D55836991A11E45D0031AACD /* QuestionCell.m */,
+				D55836A41A11F81A0031AACD /* exampleQuestion.json */,
+				D558369B1A11EF830031AACD /* Question.h */,
+				D558369C1A11EF830031AACD /* Question.m */,
+				D558369E1A11EF8F0031AACD /* User.h */,
+				D558369F1A11EF8F0031AACD /* User.m */,
 			);
 			name = "Model Layer";
 			sourceTree = "<group>";
@@ -156,11 +164,12 @@
 		D55836571A11734D0031AACD /* Controller layer */ = {
 			isa = PBXGroup;
 			children = (
-				D558365C1A117AFA0031AACD /* NetworkController.m */,
 				D558365E1A117B300031AACD /* QuestionsSearchViewController.h */,
 				D558365F1A117B300031AACD /* QuestionsSearchViewController.m */,
 				D55836611A11CEDD0031AACD /* SplitContainerViewController.h */,
 				D55836621A11CEDD0031AACD /* SplitContainerViewController.m */,
+				D55836A11A11F4C50031AACD /* NetworkController.h */,
+				D55836A21A11F4C50031AACD /* NetworkController.m */,
 			);
 			name = "Controller layer";
 			sourceTree = "<group>";
@@ -245,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D55836A51A11F81A0031AACD /* exampleQuestion.json in Resources */,
 				D55836391A11686A0031AACD /* Main.storyboard in Resources */,
 				D558363E1A11686A0031AACD /* LaunchScreen.xib in Resources */,
 				D558363B1A11686A0031AACD /* Images.xcassets in Resources */,
@@ -267,12 +277,12 @@
 			files = (
 				D55836331A11686A0031AACD /* stackOClient.xcdatamodeld in Sources */,
 				D55836301A11686A0031AACD /* AppDelegate.m in Sources */,
+				D55836A01A11EF8F0031AACD /* User.m in Sources */,
 				D55836601A117B300031AACD /* QuestionsSearchViewController.m in Sources */,
-				D558365B1A1173BD0031AACD /* User.m in Sources */,
-				D55836591A11738E0031AACD /* Question.m in Sources */,
-				D558365D1A117AFA0031AACD /* NetworkController.m in Sources */,
 				D558362D1A11686A0031AACD /* main.m in Sources */,
+				D558369D1A11EF830031AACD /* Question.m in Sources */,
 				D55836631A11CEDD0031AACD /* SplitContainerViewController.m in Sources */,
+				D55836A31A11F4C50031AACD /* NetworkController.m in Sources */,
 				D558369A1A11E45D0031AACD /* QuestionCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

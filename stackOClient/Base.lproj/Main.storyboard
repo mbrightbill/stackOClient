@@ -103,10 +103,6 @@
                         <subviews>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="7UF-HN-JyD">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="600" id="GdM-U2-EtT"/>
-                                    <constraint firstAttribute="height" constant="44" id="LQc-EA-oAu"/>
-                                </constraints>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="yOK-5J-Ogn">
@@ -119,22 +115,24 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cDQ-qm-zZr" id="Mb9-h0-IL3">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2L-1C-zJC">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example Question" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTF-Cy-fjo">
                                                     <rect key="frame" x="8" y="15" width="584" height="36"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="backgroundColor" red="0.09803922474" green="0.5176470876" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.098039224743843079" green="0.51764708757400513" blue="0.94509810209274292" alpha="1" colorSpace="deviceRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="t2L-1C-zJC" secondAttribute="trailing" constant="8" id="3BR-3Q-ebD"/>
-                                                <constraint firstItem="t2L-1C-zJC" firstAttribute="leading" secondItem="Mb9-h0-IL3" secondAttribute="leading" constant="8" id="Tri-aM-K5Z"/>
-                                                <constraint firstItem="t2L-1C-zJC" firstAttribute="top" secondItem="Mb9-h0-IL3" secondAttribute="top" constant="15" id="kA9-vv-77r"/>
-                                                <constraint firstAttribute="bottom" secondItem="t2L-1C-zJC" secondAttribute="bottom" constant="15" id="mCY-FF-h0Q"/>
+                                                <constraint firstAttribute="trailing" secondItem="ZTF-Cy-fjo" secondAttribute="trailing" constant="8" id="REJ-FD-GDC"/>
+                                                <constraint firstItem="ZTF-Cy-fjo" firstAttribute="leading" secondItem="Mb9-h0-IL3" secondAttribute="leading" constant="8" id="UmD-g6-7Eh"/>
+                                                <constraint firstAttribute="bottom" secondItem="ZTF-Cy-fjo" secondAttribute="bottom" constant="14.5" id="dwJ-wh-5OR"/>
+                                                <constraint firstItem="ZTF-Cy-fjo" firstAttribute="top" secondItem="Mb9-h0-IL3" secondAttribute="top" constant="15" id="h2J-ob-Oaf"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="questionLabel" destination="t2L-1C-zJC" id="Lls-Wg-ReX"/>
+                                            <outlet property="questionTitle" destination="ZTF-Cy-fjo" id="BBn-Mb-tPt"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -142,14 +140,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="yOK-5J-Ogn" secondAttribute="trailing" id="EZD-fu-bUH"/>
-                            <constraint firstItem="yOK-5J-Ogn" firstAttribute="top" secondItem="7UF-HN-JyD" secondAttribute="bottom" id="JJP-ef-OCL"/>
-                            <constraint firstItem="7UF-HN-JyD" firstAttribute="leading" secondItem="RFp-mE-W8l" secondAttribute="leading" id="R2b-HP-HzC"/>
-                            <constraint firstItem="QD8-UH-rp7" firstAttribute="top" secondItem="yOK-5J-Ogn" secondAttribute="bottom" id="RBn-Tf-anV"/>
-                            <constraint firstItem="yOK-5J-Ogn" firstAttribute="leading" secondItem="RFp-mE-W8l" secondAttribute="leading" id="V2w-5I-CAd"/>
-                            <constraint firstAttribute="trailing" secondItem="7UF-HN-JyD" secondAttribute="trailing" id="ZgR-il-hR0"/>
-                            <constraint firstItem="7UF-HN-JyD" firstAttribute="top" secondItem="6hH-9h-gbn" secondAttribute="bottom" id="mfW-fl-AgC"/>
-                            <constraint firstItem="yOK-5J-Ogn" firstAttribute="top" secondItem="7UF-HN-JyD" secondAttribute="bottom" id="nJU-5n-VAQ"/>
+                            <constraint firstItem="7UF-HN-JyD" firstAttribute="top" secondItem="6hH-9h-gbn" secondAttribute="bottom" id="6dZ-qB-lZK"/>
+                            <constraint firstItem="yOK-5J-Ogn" firstAttribute="top" secondItem="7UF-HN-JyD" secondAttribute="bottom" id="Axk-Np-vX8"/>
+                            <constraint firstAttribute="trailing" secondItem="7UF-HN-JyD" secondAttribute="trailing" id="Bt3-Cn-tcl"/>
+                            <constraint firstItem="QD8-UH-rp7" firstAttribute="top" secondItem="yOK-5J-Ogn" secondAttribute="bottom" id="HOj-ec-voB"/>
+                            <constraint firstItem="yOK-5J-Ogn" firstAttribute="leading" secondItem="RFp-mE-W8l" secondAttribute="leading" id="HpU-gF-WFZ"/>
+                            <constraint firstAttribute="trailing" secondItem="yOK-5J-Ogn" secondAttribute="trailing" id="MqM-pZ-BlY"/>
+                            <constraint firstItem="7UF-HN-JyD" firstAttribute="leading" secondItem="RFp-mE-W8l" secondAttribute="leading" id="dfr-is-z2U"/>
+                            <constraint firstItem="yOK-5J-Ogn" firstAttribute="top" secondItem="7UF-HN-JyD" secondAttribute="bottom" id="ebJ-al-QXE"/>
                         </constraints>
                     </view>
                     <connections>
