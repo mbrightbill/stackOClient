@@ -51,6 +51,9 @@
                                                 <constraint firstItem="3zc-UQ-Qxp" firstAttribute="top" secondItem="eJT-gU-vlw" secondAttribute="top" constant="19" id="WMR-J0-pOp"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="f5P-qy-KF0" kind="presentation" id="2Uu-mY-gpC"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="QUESTIONOPTION_CELL" rowHeight="60" id="Wo3-uC-GFH">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
@@ -88,6 +91,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Mg-n1-iSu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1171" y="149"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="2Mp-ns-dFR">
+            <objects>
+                <viewController id="f5P-qy-KF0" customClass="WebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gsp-nr-1Vu"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Yc-fV-vSq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="goT-XS-cEG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qrY-L5-aDE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qrY-L5-aDE" firstAttribute="leading" secondItem="goT-XS-cEG" secondAttribute="leading" id="Mjy-np-FKY"/>
+                            <constraint firstAttribute="trailing" secondItem="qrY-L5-aDE" secondAttribute="trailing" id="Tq1-dh-ebt"/>
+                            <constraint firstItem="qrY-L5-aDE" firstAttribute="top" secondItem="gsp-nr-1Vu" secondAttribute="bottom" id="e7M-MP-BTt"/>
+                            <constraint firstItem="0Yc-fV-vSq" firstAttribute="top" secondItem="qrY-L5-aDE" secondAttribute="bottom" id="wrI-QX-BSj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="qrY-L5-aDE" id="iS0-Lu-bYa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zmF-4N-b4e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1171" y="842"/>
         </scene>
         <!--Questions Search View Controller-->
         <scene sceneID="Ktw-HD-9tZ">

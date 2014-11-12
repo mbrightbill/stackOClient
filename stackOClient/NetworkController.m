@@ -9,9 +9,15 @@
 #import "NetworkController.h"
 #import "Question.h"
 
+@interface NetworkController()
+
+@property (nonatomic, strong) NSURLSession *urlSession;
+
+@end
+
 @implementation NetworkController
 
-+ (id)networkController {
++ (NetworkController *)networkController {
     static NetworkController *networkController = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -23,7 +29,7 @@
 - (void) fetchQuestionsUsingSearch:(NSString *)searchPhrase completionHandler: (void (^)(NSMutableArray *))completionHandler {
     
     NSURLSessionConfiguration *configurationSession = [NSURLSessionConfiguration defaultSessionConfiguration];
-    self.urlSession = [NSURLSession sessionWithConfiguration:configurationSession];
+    [self setUrlSession:[NSURLSession sessionWithConfiguration:configurationSession]];
     
     NSURL *urlString = [[NSURL alloc] initWithString:[NSString stringWithFormat:@"https://api.stackexchange.com/2.2/search?order=desc&sort=activity&tagged=%@&site=stackoverflow", searchPhrase]];
     

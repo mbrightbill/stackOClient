@@ -18,4 +18,6 @@
 
 + (NSMutableArray *)parseJSONIntoQuestions:(NSData *)rawJSONData;
 
+- (Question *)init: (NSDictionary *) attributeDictionary;
+
 @end

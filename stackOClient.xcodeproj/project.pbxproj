@@ -21,6 +21,7 @@
 		D55836A01A11EF8F0031AACD /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D558369F1A11EF8F0031AACD /* User.m */; };
 		D55836A31A11F4C50031AACD /* NetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = D55836A21A11F4C50031AACD /* NetworkController.m */; };
 		D55836A51A11F81A0031AACD /* exampleQuestion.json in Resources */ = {isa = PBXBuildFile; fileRef = D55836A41A11F81A0031AACD /* exampleQuestion.json */; };
+		D55836AB1A12BC360031AACD /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D55836AA1A12BC360031AACD /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		D55836A11A11F4C50031AACD /* NetworkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkController.h; sourceTree = "<group>"; };
 		D55836A21A11F4C50031AACD /* NetworkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkController.m; sourceTree = "<group>"; };
 		D55836A41A11F81A0031AACD /* exampleQuestion.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exampleQuestion.json; sourceTree = "<group>"; };
+		D55836A91A12BC360031AACD /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		D55836AA1A12BC360031AACD /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +173,8 @@
 				D55836621A11CEDD0031AACD /* SplitContainerViewController.m */,
 				D55836A11A11F4C50031AACD /* NetworkController.h */,
 				D55836A21A11F4C50031AACD /* NetworkController.m */,
+				D55836A91A12BC360031AACD /* WebViewController.h */,
+				D55836AA1A12BC360031AACD /* WebViewController.m */,
 			);
 			name = "Controller layer";
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D55836331A11686A0031AACD /* stackOClient.xcdatamodeld in Sources */,
+				D55836AB1A12BC360031AACD /* WebViewController.m in Sources */,
 				D55836301A11686A0031AACD /* AppDelegate.m in Sources */,
 				D55836A01A11EF8F0031AACD /* User.m in Sources */,
 				D55836601A117B300031AACD /* QuestionsSearchViewController.m in Sources */,

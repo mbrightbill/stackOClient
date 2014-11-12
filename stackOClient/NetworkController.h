@@ -10,9 +10,9 @@
 
 @interface NetworkController : NSObject
 
-+ (id)networkController;
++ (NetworkController *)networkController;
 
-@property (nonatomic, strong) NSURLSession *urlSession;
+@property (nonatomic, strong) NSString *token;
 
 - (void)fetchQuestionsUsingSearch:(NSString *)searchPhrase completionHandler: (void (^)(NSMutableArray *))completionHandler;
 
