@@ -25,9 +25,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.publicKey = @"PXHUNnVg)RYEOhqa7FUOHQ((";
-    self.oAuthDomain = @"stackexchange.com/oauth/login_success";
-    self.clientID = @"3843";
+    self.publicKey = @"ngZgiDsY8Nlw3lCnDcHOEA((";
+    self.oAuthDomain = @"https://stackexchange.com/oauth/login_success";
+    self.clientID = @"3850";
     self.oAuthURL = @"https://stackexchange.com/oauth/dialog";
     
     self.webView.delegate = self;
