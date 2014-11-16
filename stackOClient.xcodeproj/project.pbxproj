@@ -22,6 +22,7 @@
 		D55836A31A11F4C50031AACD /* NetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = D55836A21A11F4C50031AACD /* NetworkController.m */; };
 		D55836A51A11F81A0031AACD /* exampleQuestion.json in Resources */ = {isa = PBXBuildFile; fileRef = D55836A41A11F81A0031AACD /* exampleQuestion.json */; };
 		D55836AB1A12BC360031AACD /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D55836AA1A12BC360031AACD /* WebViewController.m */; };
+		D5E03D7C1A18521700B9972A /* QuestionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E03D7B1A18521700B9972A /* QuestionTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		D55836A41A11F81A0031AACD /* exampleQuestion.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exampleQuestion.json; sourceTree = "<group>"; };
 		D55836A91A12BC360031AACD /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		D55836AA1A12BC360031AACD /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		D5E03D7B1A18521700B9972A /* QuestionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionTests.m; path = ../QuestionTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		D55836461A11686A0031AACD /* stackOClientTests */ = {
 			isa = PBXGroup;
 			children = (
+				D5E03D7B1A18521700B9972A /* QuestionTests.m */,
 				D55836491A11686A0031AACD /* stackOClientTests.m */,
 				D55836471A11686A0031AACD /* Supporting Files */,
 			);
@@ -298,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D558364A1A11686A0031AACD /* stackOClientTests.m in Sources */,
+				D5E03D7C1A18521700B9972A /* QuestionTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
