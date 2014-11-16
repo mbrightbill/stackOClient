@@ -19,6 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.title = NSLocalizedString(@"Questions", @"Questions");
 
     self.tableView.delegate = self;
     self.tableView.dataSource = self;

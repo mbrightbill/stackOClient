@@ -1,0 +1,12 @@
+
+/* Class = "IBUINavigationItem"; title = "Root View Controller"; ObjectID = "1ya-KX-Ovb"; */
+"1ya-KX-Ovb.title" = "Root View Controller";
+
+/* Class = "IBUILabel"; text = "Users"; ObjectID = "3zc-UQ-Qxp"; */
+"3zc-UQ-Qxp.text" = "Users";
+
+/* Class = "IBUILabel"; text = "Example Question"; ObjectID = "ZTF-Cy-fjo"; */
+"ZTF-Cy-fjo.text" = "Example Question";
+
+/* Class = "IBUILabel"; text = "Questions"; ObjectID = "zUo-sv-fb3"; */
+"zUo-sv-fb3.text" = "Questions";
