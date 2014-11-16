@@ -123,6 +123,7 @@
 		D558362A1A11686A0031AACD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D55836A41A11F81A0031AACD /* exampleQuestion.json */,
 				D5E03D961A1875A900B9972A /* Localizable.strings */,
 				D558362B1A11686A0031AACD /* Info.plist */,
 				D558362C1A11686A0031AACD /* main.m */,
@@ -155,7 +156,6 @@
 				D558362F1A11686A0031AACD /* AppDelegate.m */,
 				D55836981A11E45D0031AACD /* QuestionCell.h */,
 				D55836991A11E45D0031AACD /* QuestionCell.m */,
-				D55836A41A11F81A0031AACD /* exampleQuestion.json */,
 				D558369B1A11EF830031AACD /* Question.h */,
 				D558369C1A11EF830031AACD /* Question.m */,
 				D558369E1A11EF8F0031AACD /* User.h */,

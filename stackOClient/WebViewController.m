@@ -47,7 +47,10 @@
                 NSLog(@"Second if");
                 NSArray *components = [requestString componentsSeparatedByString:@"="];
                 NSArray *tokenComponents = [components[1] componentsSeparatedByString:@"&"];
+                NetworkController *sharedNetworkController = [NetworkController networkController];
                 [NetworkController networkController].token = tokenComponents[0];
+                [[NSUserDefaults standardUserDefaults] setValue:sharedNetworkController.token forKey:@"token"];
+                [[NSUserDefaults standardUserDefaults] synchronize];
                 [self dismissViewControllerAnimated:YES completion:nil];
             }
         }

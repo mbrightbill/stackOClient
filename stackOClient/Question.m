@@ -12,9 +12,10 @@
 
 - (Question *)init: (NSDictionary *) attributeDictionary {
     if (self = [super init]) {
-        self.title = attributeDictionary[@"title"];
-        NSDictionary *owner = attributeDictionary[@"owner"];
-        self.ownerName = owner[@"display_name"];
+        self.title = [attributeDictionary valueForKeyPath:@"title"];
+        
+        // deleted one step in pulling out info by using KVC
+        self.ownerName = [attributeDictionary valueForKeyPath:@"owner.display_name"];
     }
     return self;
 }
