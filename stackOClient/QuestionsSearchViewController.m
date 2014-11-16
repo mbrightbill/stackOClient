@@ -10,6 +10,9 @@
 #import "QuestionCell.h"
 #import "NetworkController.h"
 #import "Question.h"
+#import <SVProgressHUD/SVProgressHUD.h>
+#import <UIView+Shake.h>
+#import "NSString+HTML.h"
 
 @interface QuestionsSearchViewController ()
 
@@ -29,10 +32,17 @@
 }
 
 - (void) searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    [SVProgressHUD show]; // dependency
+    [self.view shake:10   // 10 times
+           withDelta:5    // 5 points wide
+            andSpeed:0.04
+      shakeDirection:ShakeDirectionVertical
+     ];
     [[NetworkController networkController] fetchQuestionsUsingSearch:self.searchBar.text completionHandler:^(NSMutableArray *response) {
         self.questions = response;
         [self.tableView reloadData];
     }];
+    [SVProgressHUD dismiss];
     [self.searchBar resignFirstResponder];
 }
 
@@ -47,7 +57,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     QuestionCell *cell = [tableView dequeueReusableCellWithIdentifier:@"QUESTION_CELL" forIndexPath:indexPath];
     Question *selectedQuestion = self.questions[indexPath.row];
-    cell.questionTitle.text = selectedQuestion.title;
+    cell.questionTitle.text = [selectedQuestion.title kv_decodeHTMLCharacterEntities];
     return cell;
 }
 
