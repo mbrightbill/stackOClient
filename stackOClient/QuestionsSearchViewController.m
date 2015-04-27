@@ -57,7 +57,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     QuestionCell *cell = [tableView dequeueReusableCellWithIdentifier:@"QUESTION_CELL" forIndexPath:indexPath];
     Question *selectedQuestion = self.questions[indexPath.row];
-    cell.questionTitle.text = [selectedQuestion.title kv_decodeHTMLCharacterEntities];
+    cell.questionTitle.text = [selectedQuestion.title kv_decodeHTMLCharacterEntities    ];
     return cell;
 }
 

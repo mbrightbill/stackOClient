@@ -8,8 +8,6 @@
 
 #import "SplitContainerViewController.h"
 
-
-
 @interface SplitContainerViewController ()
 
 @end
@@ -23,13 +21,8 @@
     splitVC.delegate = self;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
-
 - (BOOL)splitViewController:(UISplitViewController *)splitViewController collapseSecondaryViewController:(UIViewController *)secondaryViewController ontoPrimaryViewController:(UIViewController *)primaryViewController {
     return true;
 }
-
 
 @end
