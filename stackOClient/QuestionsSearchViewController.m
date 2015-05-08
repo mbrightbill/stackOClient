@@ -20,6 +20,8 @@
 
 @implementation QuestionsSearchViewController
 
+#pragma mark - Lifecycle methods
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -30,6 +32,8 @@
     self.searchBar.delegate = self;
     self.searchBar.placeholder = @"Search Questions";
 }
+
+#pragma mark - Search Bar methods
 
 - (void) searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     [SVProgressHUD show]; // dependency
@@ -45,6 +49,8 @@
     [SVProgressHUD dismiss];
     [self.searchBar resignFirstResponder];
 }
+
+#pragma mark - Table View methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (self.questions != 0) {
